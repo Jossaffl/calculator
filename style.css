@@ -1,16 +1,23 @@
+body{
+    box-sizing: border-box;
+}
+
 #calculator{
     display:flex;
     flex: 1;
     flex-wrap: wrap;
-    max-width: 380px;
+    width: 330px;
     max-height: 800px;
+    background-color: black;
 
 }
+
 
 button{
     min-height: 75px;
     min-width: 75px;
     margin: 3px;
+    background-color: green;
 }
 
 #screen{
@@ -20,12 +27,31 @@ button{
     border-color: black;
     font-weight: 900;
     font-size: 6vh;
+    display: flex;
+    justify-content: flex-end;
+    background-color: aqua;
     }
 
-#numbers{
+#top_container{
     display:flex;
     flex: 1;
+    max-width: 245px;
+    min-width: 245px;
     flex-wrap: wrap;
-    max-width: 300px;
+    
 }
 
+#numbers{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    background-color: black;
+    color: green;
+    
+}
+
+
+.operators_2{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 75px;
+}
